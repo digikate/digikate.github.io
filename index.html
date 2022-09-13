@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'/>
+    <title>Queenstown - Home</title>
+    
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+    
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  border: solid rgb (229, 248, 250);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    *{
+        margin:0;
+    }
+    
+    
+    body{
+        background-color: rgb(203, 248, 250);
+        font-family: 'DynaPuff', cursive;
+        font-size: 100%;
+    }
+    
+    h1{
+        font-size: 3em;
+        background-color: rgb(242, 242, 242);
+        color: rgb(0, 37, 82);
+        text-align: center;
+    }
+   
+    h2{
+        font-size: 2em;
+        background-color: rgb(242, 242, 242);
+        color: rgb(0, 37, 82);
+        text-align: center;
+    }
+    
+    h3{
+        font-size: 1.5em;
+        background-color: rgb(242, 242, 242);
+        color: rgb(0, 37, 82);
+        text-align: center;
+    }
+    
+    p{
+        font-size: 1em;
+        line-height: 1.2em;
+        letter-spacing: 0.08em;
+        text-align: left;
+        margin: 1em 2em;
+        
+    }
+    
+    .little-towns{
+        max-width: 1200px;
+        margin:auto;
+        border: 5px solid rgb(0, 37, 82);
+    }
+    
+    .activities{
+        max-width: 1200px;
+        border: 5px solid rgb(0, 37, 82);
+        margin:auto;
+    }
+    
+    .foodentertainment{
+        max-width: 1200px;
+        border: 5px solid rgb(0, 37, 82);
+        margin:auto;
+    }
+    
+    .sub-header{
+        text-align:center;
+        max-width: 1200px;
+        margin: auto;
+        font-style:inherit;
+        border: 3px dashed rgb(0, 37, 82);
+        border-radius: 10px;
+    }
+    
+    .row{
+        display: table;
+        clear: both;
+    }
+    
+    .column1{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    
+    .column2{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    
+    .img-responsive{
+        max-width:93%;
+        border: 10px solid rgb(229, 248, 250);
+        border-radius: 15px;
+        display: block;
+        box-sizing: border-box;
+        margin:auto;
+        margin-top: 1.2em
+    }
+    
+    .roundimage{
+        border-radius: 50%;
+        border: 6px solid rgb(0, 37, 82);
+        display:block;
+        margin: auto;
+        margin-top: 1em;
+    }
+    
+    .nav-bar{
+        background-color: rgb(0, 37, 82);
+    }
+    
+    .nav{
+        list-style: none;
+        padding:0;
+        margin:0;
+        text-align: center;
+ 
+    }
+    
+    .nav li{
+        display: inline;
+        
+    }
+    
+    .nav li a{
+        padding:1.5em;
+        display:inline-block;
+        border: 1px dashed rgb(203, 248, 250);
+        border-radius: 10px;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    a:link{
+        text-decoration: none;
+        color: rgb(242, 242, 242);
+    }
+    
+    a:visited{
+        color: rgb(242, 242, 242);
+    }
+    
+    a:hover{
+        background-color: rgb(203, 248, 250);
+        color: rgb(0, 37, 82);
+    }
+    
+    
+    .dropdown {
+     position: relative;
+     display: inline-block;
+     display: solid;
+
+    }
+
+    .dropdown-content {
+     display: none;
+     position: absolute;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     padding: 12px 16px;
+     z-index: 1;
+     background-color: rgb(0, 37, 82)
+    }
+
+   .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
+
+</style>
+</head>
+<body>
+    <div class="nav-bar">
+    <ul class="nav">
+    <li><a href="#LT"> Little Towns </a></li>
+    <li><a href="#A"> Activities </a></li>
+    <div class="dropdown">
+        <li><a href="#FE"> Food and entertainment </a></li>
+    <div class="dropdown-content">
+        <li><a href="#F"> Ferg </a></li>
+        <li><a href="#CT"> CookieTime CookieBar</a></li>
+        <li><a href="#S"> Shopping</a></li>
+    </div>
+    </div>
+    </ul>
+    </div>
+<h1>Queenstown</h1> 
+        <h2>Introduction</h2>
+    <div class="sub-header">
+        <p>Queenstown is located in the South Island of New Zealand. Nicknamed “the adventure capital of the world”, Queenstown is home to lots of outdoor activities for all to enjoy such as: The Luge, superb bike trails and exploring the beautiful landscapes of Glenorchy. As well as a range of outdoor activities, Queenstown also offers many famous food destinations such as: Ferg’s Burger and the Cookie Time Cookiebar. You can also go to the Queenstown city centre and enjoy some shopping, everything is within walking distance!</p>
+   </div>
+    
+<div class="little-towns">    
+<h2 id="LT">Little Towns</h2>
+<div class="row">
+    <div class="column2">
+<h3>Glenorchy</h3>
+<img class="img-responsive" src="IMAGES/glenorchyscenery_littletowns.jpg" alt="Glenorchy - Trees in water">
+<p>Glenorchy is a small little town 45 minutes away from Queenstown via a stunning lakeside drive. There, snow capped mountains, pristine lakes, rivers and national parks around Glenorchy featured prominently in the Lord of the Rings trilogy. If you’re a movie-buff then you can go on the fun and highly educational movie tours run by small companies from Queenstown.
+</p>
+    </div>
+    <div class="column2">
+<h3>Arrowtown</h3>
+<img class="img-responsive" src="IMAGES/arrowtowngoldmine_littletowns.jpg" alt="village">
+<p>Arrowtown is a small village 20 minutes drive from Queenstown. There, you can experience bike trails and picturesque former gold mining village, explore old miners’ cottages, the restored Chinese village and visit the Lakes District museum. Arrowtown also has a range of cafes, restaurants and bars, boutiques selling homeware, souvenirs and designer clothing.</p>
+    </div>
+</div>
+    </div>
+<div class="activities">
+<h2 id="A">Activities</h2>
+
+<p>If you enjoy adventure, participating in the following activities will enhance your Queenstown experience: The luge, iFly and scenic trail walks. </p>
+
+<h3>The Luge, Jelly Belly and iFly</h3>
+<img class="img-responsive" src="IMAGES/luge_activities.jpg" alt="luge">
+<p>The Skyline Luge: Take on 900m of banked corners, tight turns, tunnels and stomach dropping dips on the Skyline Luge course. Once you reach the bottom, ride the chairlifts and do it all again! You can even visit the Jelly Belly store and treat yourself to the wide variety of the Pick ‘n’ mix jelly beans available.</p>
+<hr>
+<p>iFly: Experience the feeling of skydiving indoors! You can book a range of packages, fly in virtual reality and fly high.</p>
+
+<h3>Queenstown Trail</h3>
+<img class="img-responsive" src="IMAGES/queenstowntrail2_activities.jpg" alt="trail">
+<p>Queenstown Trail: There are many trails in Queenstown but the basic Queenstown trail is suitable for people of all ages and abilities. Hire a bike or go for a late evening stroll, enjoy the scenery of Late Wakatipu. </p>
+</div>
+    
+<div class="foodentertainment">    
+<h2 id="FE">Food and Entertainment</h2>
+    
+<h3 id="F">Ferg</h3>
+<img class="roundimage" src="IMAGES/newmenu_entertainment.jpg" alt="menu" style="width:400px">
+<p>Ferg Burger: Operating since 2001, Ferg Burger is famous for its freshly made burgers. Its wide variety of burgers and unique combinations of fillings attracts tourists from all over the world. Ferg also has a range of other branches including: Mrs Ferg (gelato), FergBaker and Ferg’s Bar.</p>
+<img class="img-responsive" src="IMAGES/ferg_entertainment.jpg" alt="signs">
+<h3 id="CT">CookieTime CookieBar</h3>
+<div class="row">
+    <div class="column1">
+<img class="img-responsive" src="IMAGES/cookietimemilkshake_food.jpg" alt="cookietimefreakshake">
+    </div>
+    <div class="column1">
+<img class="img-responsive" src="IMAGES/cookietimemonster_entertainment.jpg" alt="cookietimeshop">
+    </div>
+</div>
+<p>CookieTime Cookiebar: Enjoy fresh hot cookies, freak shakes, ice-cream, ice-cream sandwiches and even hot chocolates. </p>
+    
+<h3 id="S">Shopping</h3>
+<img class="img-responsive" src="IMAGES/shopping_entertainment.jpg" alt="town">
+<p>Shopping: Queenstown has a compact and easily accessible city centre with all the shopping essentials. From luxury brands, iconic New Zealand design stores, adventure sports equipment to art galleries, book stores and specialty stores there are retail stores for everyone to enjoy and all within walking distance!</p>
+
+</div>
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/glenorchy_littletowns.jpg" style="width:100%" alt="arrowtown">
+  <div class="text">Glenorchy scenery</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/biketrack_littletowns.jpg" style="width:100%" alt="fergburger">
+  <div class="text">Rental bikes - bike track</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="IMAGES/fergbakery_food.jpg" style="width:100%" alt="donutsandco">
+  <div class="text">Fergbakery</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<footer>Copyright Kate Yu</footer>
+</body>
+    
